@@ -21,12 +21,16 @@
 ![Снимок экрана (1915)](https://github.com/user-attachments/assets/0d5eab8b-29a4-452b-a84d-4ae8c944a0d0)  
 
 Сравнение файлов (Windows не знает diff, так что используем FC):  
-![Снимок экрана (1919)](https://github.com/user-attachments/assets/f9c0d566-8d0b-4081-8c51-d7b208176c0a)  
-![Снимок экрана (1920)](https://github.com/user-attachments/assets/1962dea7-95a4-4794-9c7a-d2263992789b)  
-![Снимок экрана (1921)](https://github.com/user-attachments/assets/8cd86d72-8aff-4106-b90d-f52d8a3478a7)  
-![Снимок экрана (1922)](https://github.com/user-attachments/assets/58272a5e-3eb3-4ccb-83ab-7eb362d91f9c)  
-![Снимок экрана (1923)](https://github.com/user-attachments/assets/57c992f0-c30b-4c02-bb08-b7abe2527b36)  
-![Снимок экрана (1924)](https://github.com/user-attachments/assets/5eb4bf9f-5262-4d4a-a343-e81f0c3f7e87)  
+![Снимок экрана (1937)](https://github.com/user-attachments/assets/54ed8743-290a-487a-aae4-a47f60b02abd)  
+![Снимок экрана (1938)](https://github.com/user-attachments/assets/0903a265-6581-40c4-835a-f201ea6dd880)  
+![Снимок экрана (1939)](https://github.com/user-attachments/assets/76ebe58b-d7e7-4406-b02f-3bc9d5d9ec2f)  
+![Снимок экрана (1940)](https://github.com/user-attachments/assets/0e696ffb-4ca4-44ae-bd44-a50cf6fa5e7e)  
+![Снимок экрана (1941)](https://github.com/user-attachments/assets/354488c8-cd4e-4bf9-8adf-f204e7041249)  
+![Снимок экрана (1942)](https://github.com/user-attachments/assets/cfbdcad3-8f03-4001-8118-aed8d231bde7)  
+![Снимок экрана (1943)](https://github.com/user-attachments/assets/78cbe05c-1b8f-4697-a540-f9edb8d08499)  
+
+
+
 
 
 
