@@ -29,7 +29,9 @@
 ![Снимок экрана (1942)](https://github.com/user-attachments/assets/cfbdcad3-8f03-4001-8118-aed8d231bde7)  
 ![Снимок экрана (1943)](https://github.com/user-attachments/assets/78cbe05c-1b8f-4697-a540-f9edb8d08499)  
 
-
+Генерация оптимизированного LLVM IR:  
+![Снимок экрана (1944)](https://github.com/user-attachments/assets/03e2cf3f-9f9c-48d3-9825-9d5ae1dfe4bc)  
+Предупреждения - не ошибки, так что идём дальше  
 
 
 
