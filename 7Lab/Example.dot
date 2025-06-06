@@ -1,0 +1,26 @@
+digraph "CFG" {
+  label="Control Flow Graph";
+  node [shape=record];
+
+  subgraph cluster_Pow {
+    label = "Pow";
+    "Pow_entry" [label="{ entry | %b.addr = alloca i32, align 4\l%a.addr = alloca i32, align 4\l%result = alloca i32, align 4\l%i = alloca i32, align 4\lstore i32 %b, i32* %b.addr, align 4\lstore i32 %a, i32* %a.addr, align 4\lstore i32 1, i32* %result, align 4\lstore i32 0, i32* %i, align 4\lbr label %for.cond }"];
+    "Pow_for.cond" [label="{ for.cond | %0 = load i32, i32* %i, align 4\l%1 = load i32, i32* %b.addr, align 4\l%cmp = icmp slt i32 %0, %1\lbr i1 %cmp, label %for.body, label %for.end }"];
+    "Pow_for.body" [label="{ for.body | %2 = load i32, i32* %a.addr, align 4\l%3 = load i32, i32* %result, align 4\l%mul = mul nsw i32 %3, %2\lstore i32 %mul, i32* %result, align 4\lbr label %for.inc }"];
+    "Pow_for.inc" [label="{ for.inc | %4 = load i32, i32* %i, align 4\l%inc = add nsw i32 %4, 1\lstore i32 %inc, i32* %i, align 4\lbr label %for.cond }"];
+    "Pow_for.end" [label="{ for.end | %5 = load i32, i32* %result, align 4\lret i32 %5 }"];
+
+    "Pow_entry" -> "Pow_for.cond";
+    "Pow_for.cond" -> "Pow_for.body" [label="true"];
+    "Pow_for.cond" -> "Pow_for.end" [label="false"];
+    "Pow_for.body" -> "Pow_for.inc";
+    "Pow_for.inc" -> "Pow_for.cond";
+  }
+
+  subgraph cluster_main {
+    label = "main";
+    "main_entry" [label="{ entry | %retval = alloca i32, align 4\l%a = alloca i32, align 4\l%b = alloca i32, align 4\l%c = alloca i32, align 4\lstore i32 0, i32* %retval, align 4\lstore i32 3, i32* %a, align 4\lstore i32 3, i32* %b, align 4\l%0 = load i32, i32* %b, align 4\l%1 = load i32, i32* %a, align 4\l%call = call i32 @Pow(i32 %1, i32 %0)\lstore i32 %call, i32* %c, align 4\l%2 = load i32, i32* %c, align 4\l%call1 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([3 x i8], [3 x i8]* @&quot;??_C@_02DPKJAMEF@?$CFd?$AA@&quot;, i64 0, i64 0), i32 %2)\lret i32 0 }"];
+  }
+
+  "main_entry" -> "Pow_entry"; // Пример вызова функции Pow
+}
